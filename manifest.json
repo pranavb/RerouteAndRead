@@ -1,19 +1,18 @@
 {
     "manifest_version": 2,
   
-    "name": "Getting started example",
-    "description": "This extension allows the user to change the background color of the current page.",
-    "version": "1.0",
+    "name": "RerouteToRead",
+    "description": "Reroutes Chrome to the Kindle web reader if you try to open Facebook",
+    "version": "0.1",
   
     "browser_action": {
       "default_icon": "images/icon.png",
-      "default_popup": "popup.html",
-      "default_title": "Click right here!"
+      "!default_popup": "popup.html",
+      "default_title": "Remove to disable"
     },
 
     "permissions": [
       "activeTab",
-      "storage",
       "webNavigation"
     ], 
 
