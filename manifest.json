@@ -6,11 +6,19 @@
     "version": "1.0",
   
     "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "popup.html"
+      "default_icon": "images/icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Click right here!"
     },
+
     "permissions": [
       "activeTab",
-      "storage"
-    ]
+      "storage",
+      "webNavigation"
+    ], 
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    }
   }
